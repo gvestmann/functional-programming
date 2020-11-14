@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>DYI Web Hosting</title>
+    <!-- My custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts - Nunito -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;600&display=swap" rel="stylesheet">
+    <!-- Bootstrap base CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="css/mdb.min.css">
+</head>
+<body class="animated fadeIn">
+    <main class="flex-center flex-column z-depth-5">
+        <h1 class="mb-3">Instroduction to functional programming</h1>
+        <div class="main__wrapper">
+            <h2>To start with</h2>
+            <p>Functional programming has been a buzzword for the last few years, as you can clearly see on <a href="https://trends.google.com/trends/explore?date=all&geo=US&q=%2Fm%2F02ykw">Google Trends</a>. However, it traces it's roots to early computing in the 1930's & 40's. The first purely functional programming language was created in the 1950's, LISP by IBM and has since had deep roots in academia and computer theory. Therefore, the concepts of funtional programming can and have been applied to many programming languages - including Javascript. And that's what we're looking at today.</p>
+            
+            <h2>Basic principles</h2>
+            <p>Since funtional programming is a theory or idea, it's approach varies from one language to another although the same principles will apply. The most basic explanation is that functions are completely independent from the scope of the code; that is, it only takes arguments that are passed into them. Furthermore, they try to limit any changes made to other functions or variables outside their own scope.</p>
+            
+            <p>Why bother, you might ask? Well, the argument is that you can more easily debug your code. You can with more confidence, say, delete a function or replacing it, without it breaking the whole program. Since functions limit their scope, bugs are more easily spotted and squashed.</p>
+            
+            <p>Let's dig further into this.</p>
+            
+            <h2>Pure functions & side effects</h2>
+            <p>The concept pure function describes the idea the the input always gives the same output. It's isolated, so to say. That way they should have no side effects. Side effects, meaning effecting the program outside that particular functions scope.</p>
+            
+            <p>A simple example (4-9)</p>
+            
+            <h2>First class, high order & lambda</h2>
+            <p>These are three important concept. Firstly: First class function. These are functions have been stored in a variable and passed into or returned from other functions (Functeption?), be it 2 or 100 (but please don't put 100 in 1 function). Apparently all functions in Javascript are first-class citizens.</p>
+            
+            <p>Now, High order functions are those that take another functions as an argument or return a function as a value.</p> 
+            
+            <p>And those Lambda-thingies? Those are functions that are passed in to other functions. They can be treated like an object, meaning they are that other's function parameter. Fun fact, named after The Lambda Calculus by Alonzo Church, a pioneer on functional programming.</p>
+            
+            <h2>No X-MEN here!</h2>
+            <p>In functional programming variables should not be mutated. Mutations means that their original state has been alter. Once a variable is declared you should be sure that it will stay that way. If the variable is in fact mutated, you'll get what is called an side effect. That's pretty self-explanatory, it might affect other parts of your code.</p>
+            
+            <p>Example (14-27)</p>
+            
+            </h>Dealing with arrays</h2>
+            <p>Just like with variables, arrays should not be mutated according to functional programming. That means methods like pop, push, shift, sort, splice, are all a NO GO. Instead, we should use methods like map, filter, reduce to manipulate arrays.</p>
+            
+            <p>Let's look at an example were we work with map.</p>
+            
+            </p>Example (32-46)</p>
+            
+            https://en.wikipedia.org/wiki/Functional_programming
+            https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/functional-programming/
+            https://techaffinity.com/blog/functional-programming-in-javascript-part1/
+            https://medium.com/@chineketobenna/lambda-expressions-vs-anonymous-functions-in-javascript-3aa760c958ae
+        </div>
+    </main>
+    <!-- jQuery -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!-- Popper JS tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+  </body>
+</html>
