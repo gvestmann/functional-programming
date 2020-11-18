@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>DYI Web Hosting</title>
+    <title>INTRODUCTION TO FUNCTIONAL PROGRAMMING</title>
     <!-- My custom CSS -->
     <link rel="stylesheet" href="style.css">
     <!-- Google Fonts - Nunito -->
@@ -16,24 +16,24 @@
 </head>
 <body class="animated fadeIn">
     <main class="flex-center flex-column z-depth-5">
-        <h1 class="mb-3">Instroduction to functional programming</h1>
+        <h1 class="mb-3">Introduction to functional programming</h1>
         <div class="main__wrapper">
             <h2>To start with</h2>
             <p>Functional programming has been a buzzword for the last few years, as you can clearly see on <a href="https://trends.google.com/trends/explore?date=all&geo=US&q=%2Fm%2F02ykw">Google Trends</a>. However, it traces it's roots to early computing in the 1930's & 40's. The first purely functional programming language was created in the 1950's, LISP by IBM and has since had deep roots in academia and computer theory. Therefore, the concepts of funtional programming can and have been applied to many programming languages - including Javascript. And that's what we're looking at today.</p>
             
             <h2>Basic principles</h2>
-            <p>Since funtional programming is a theory or idea, it's approach varies from one language to another although the same principles will apply. The most basic explanation is that functions are completely independent from the scope of the code; that is, it only takes arguments that are passed into them. Furthermore, they try to limit any changes made to other functions or variables outside their own scope.</p>
+            <p>Since funtional programming is a theory or idea, it's approach varies from one language to another although the same principles will apply. The most basic explanation is that functions are completely independent from the scope of the code; that is, it only takes arguments that are passed into them. Furthermore, they try to limit any changes made to other functions or variables outside their own scope. </p>
             
             <p>Why bother, you might ask? Well, the argument is that you can more easily debug your code. You can with more confidence, say, delete a function or replacing it, without it breaking the whole program. Since functions limit their scope, bugs are more easily spotted and squashed.</p>
             
             <p>Let's dig further into this.</p>
             
             <h2>Pure functions & side effects</h2>
-            <p>The concept pure function describes the idea the the input always gives the same output. It's isolated, so to say. That way they should have no side effects. Side effects, meaning effecting the program outside that particular functions scope.</p>
+            <p>The concept pure function describes the idea the the input always gives the same output. It's isolated, so to say. That way they should have no side effects. Side effects, meaning effecting the program outside that particular functions scope. You will always know what the function will output, now it's just a matter of what you pass into it (be it parameters, methods or even other functions). We see this a lot in React with "state", where the idea is that the original data is never modified, but it's state is updated. That way, it's alway easy to get back to the original state of the data. No side effects there!</p>
             
             <p>A simple example: </p>
                 
-            <p>  (4-9)</p>
+            <img src="img/1.png">
             
             <h2>First class, high order & lambda</h2>
             <p>These are three important concept. Firstly: First class function. These are functions have been stored in a variable and passed into or returned from other functions (Functeption?), be it 2 or 100 (but please don't put 100 in 1 function). Apparently all functions in Javascript are first-class citizens.</p>
@@ -45,23 +45,35 @@
             <h2>No X-MEN here!</h2>
             <p>In functional programming variables should not be mutated. Mutations means that their original state has been alter. Once a variable is declared you should be sure that it will stay that way. If the variable is in fact mutated, you'll get what is called an side effect. That's pretty self-explanatory, it might affect other parts of your code.</p>
             
-            <p>Example (14-27)</p>
+            <img src="img/2.png">
             
-            </h>Dealing with arrays</h2>
+            <h2>Dealing with arrays</h2>
             <p>Just like with variables, arrays should not be mutated according to functional programming. That means methods like pop, push, shift, sort, splice, are all a NO GO. Instead, we should use methods like map, filter, reduce to manipulate arrays.</p>
             
             <p>Let's look at an example were we work with map:</p>
             
-            </p>Example (32-46)</p>
+            <img src="img/3.png">
 
-            <p>And here's an simple example on how we can use the filter method. We're gonna find all items that belong to category #2:</p>
+            <p>And here's an simple example on how we can use the filter method. We're gonna find all items that belong to category #1:</p>
 
-            <p>Example</p>
-            
-            https://en.wikipedia.org/wiki/Functional_programming
-            https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/functional-programming/
-            https://techaffinity.com/blog/functional-programming-in-javascript-part1/
-            https://medium.com/@chineketobenna/lambda-expressions-vs-anonymous-functions-in-javascript-3aa760c958ae
+            <img src="img/4.png">
+
+            <h2>I choose to remain anonymous</h2>
+
+            <p>Finally, I'd like to touch shortly on anonymous functions. Like the name implies, those are functions that have no name. Technically, arrow functions are anonymous but they are often stored in a variable. Unlike regular functions, they cannot be called upon if they are not named or stored in a named variable. In essence they are syntactic sugar, meaning shorter, smaller and cleaner code. But they have some other pros, like being able to access variables in the parent scopes. Here are a couple of examples of anonymous functions.</p>
+
+            <img src="img/5.png">
+
+            <p>To wrap this up ... As the name suggests, functional programming is all about functions. The idea is to keep all components as separate as possible and within functions which build on each other. More like playing with Lego rather than Playmobile. Functions can be passed around like variables, so you could assemble some sort of Functionoplis, although clean and short is encouraged in the theory of functional programming. It's supposed to be pure, have no side effects outside it scope and avoid mutation. Kind of like our drinking water.</p>
+            <footer>
+                <p class="p__smaller">Some stuff that was helpful:</p>
+                <p class="p__smaller"><a href="https://en.wikipedia.org/wiki/Functional_programming">Functional Programming @ Wikipedia</a></p>
+                <p class="p__smaller"><a href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/functional-programming/">Free Code Camp's Functional Programming Tutorials</a></p>
+                <p class="p__smaller"><a href="https://techaffinity.com/blog/functional-programming-in-javascript-part1/">Tech Affinity - Functional Programming in Javascript</a></p>
+                <p class="p__smaller"><a href="https://medium.com/@chineketobenna/lambda-expressions-vs-anonymous-functions-in-javascript-3aa760c958ae">Lambda vs. Functional</a></p>
+                <p class="p__smaller"><a href="https://www.youtube.com/watch?v=6NPfQJJEySY">JavaScript Functional Programming Tutorial</a></p>
+                <p class="p__smaller"><a href="https://www.youtube.com/watch?v=dAPL7MQGjyMDK">What is functional programming | Easy way</a></p>
+            </footer>
         </div>
     </main>
     <!-- jQuery -->

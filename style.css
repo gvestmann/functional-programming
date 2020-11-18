@@ -9,13 +9,19 @@ main {
     width: 70%;
 }
 
+footer {
+    display: flex;
+    justify-content: left;
+}
+
 h1 {
-    font-size: 3em !important;
+    font-size: 2em !important;
     color: #333333 !important;
     font-weight: 600 !important;
     margin-top: 4rem !important;
     border-bottom: 1px solid #888888;
     padding-bottom: 3rem;
+    text-transform: uppercase;
 }
 
 h2 {
@@ -44,9 +50,7 @@ p {
 
 .p__smaller {
     font-size: 14px !important;
-    text-align: center;
-    margin-top: -1rem !important;
-    margin-bottom: 4rem !important;
+    margin-bottom: 1rem !important;
 }
 
 img {
@@ -75,8 +79,7 @@ img {
     }
 
     .p__smaller {
-        margin-bottom: 2rem !important;
-        margin-top: 1rem !important;
+        text-align: right;
     }
 
 }
